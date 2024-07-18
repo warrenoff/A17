@@ -39,7 +39,7 @@ const { Gempa } = require("./lib/gempa.js");
 const getLyrics = require("@fantox01/lyrics-scraper");
 const spaceemojis = ["🌌", "🌠", "🚀", "🪐", "🌟"];     // list of emojis for Space CMDs.
 const manyemojis = ["😄", "👍", "👏", "👌", "🥇", "🌟", "🎉", "🙌", "🤩", "💯", "🔥", "✨", "🚀", "💖", "🌈", "🌞", "🌠", "🌼", "💪", "😎", "💫", "💓", "🎈", "🎁", "🍾", "🎊", "🥳", "👑", "🌺", "🌻", "🌸"];
-const os = require('os');       // for os info
+const os = require("node:os");       // for os info
 const gis = require("g-i-s");
 
 const { downloadContentFromMessage,

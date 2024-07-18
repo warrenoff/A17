@@ -57,7 +57,7 @@ const { color } = require("./lib/color");
 
 let phoneNumber = global.pairNumber;
 
-module.exports = async function startA17() {
+const startA17  = async () => {
   try {
     const store = makeInMemoryStore({
       logger: pino().child({ level: "silent", stream: "store" }),
@@ -1170,6 +1170,7 @@ You'll be a noticeable absence!
 
 
 }
+startA17()
 
 process.on('uncaughtException', function (err) {
   let e = String(err)
